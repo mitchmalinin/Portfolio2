@@ -1,4 +1,5 @@
 /*Start global*/
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -82,6 +83,10 @@ img {
 .section-heading h6 {
   font-size: 1.6rem;
   font-weight: 300;
+}
+
+.has-margin-right {
+  margin-right: 5rem;
 }
 /*End reusable*/
 
@@ -266,11 +271,67 @@ li {
 /*Start services*/
 .my-skills {
   margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 2.5rem;
+  text-align: center;
 }
 
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem;
+}
+
+.skill h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 2rem -2px 2rem 0;
+}
+
+.icon-container {
+  width: 10rem;
+  height: 10rem;
+  border: 3px solid #ffe838;
+  background-color: #fd57bf;
+  margin-bottom: 2rem;
+  display: flex;
+  transform: rotate(45deg);
+}
+
+.icon-container i {
+  color: #ffe838;
+  font-size: 5rem;
+  margin: auto;
+  transform: rotate(-45deg);
+}
 /*End services*/
 
 /*Start portfolio*/
+
+.portfolio-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.portfolio-img {
+  flex: 1;
+}
+
+.portfolio-description {
+  flex: 1;
+}
+
+.portfolio-description h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  opacity: 0.3;
+}
 /*End services*/
 
 /*Start timeline*/
